@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/public/LogoIcon.png";
-import facebook from "@/public/facebook.png"
-import twitter from "@/public/twitter.png"
-import insta from "@/public/insta.png"
-import pinterest from "@/public/pin.png"
-import youtube from "@/public/youtube.png"
-import master from "@/public/master.png"
-import paypal from "@/public/paypal.png"
-import vector from "@/public/Vector1.png"
-import union from "@/public/Union.png"
+import logo from "/public/images/LogoIcon.png";
+import facebook from "/public/images/facebook.png"
+import twitter from "/public/images/twitter.png"
+import insta from "/public/images/insta.png"
+import pinterest from "/public/images/pin.png"
+import youtube from "/public/images/youtube.png"
+import master from "/public/images/master.png"
+import paypal from "/public/images/paypal.png"
+import vector from "/public/images/Vector1.png"
+import union from "/public/images/Union.png"
 
 import Link from "next/link";
 

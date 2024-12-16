@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/LogoIcon.png"
-import cart from "@/public/Cart.png"
+import logo from "/public/images/LogoIcon.png"
+import cart from "/public/images/Cart.png"
 
 
 
@@ -13,7 +13,7 @@ const Header = () => {
           <p>✅ Free Shipping On All Orders Over $50</p>
           <div className="flex items-center space-x-6">
             <span>Eng ▼</span>
-            <Link href="#" className="hover:underline">FAQs</Link>
+            <Link href="/faqpages" className="hover:underline">FAQs</Link>
             <Link href="#" className="hover:underline">Need Help</Link>
           </div>
         </div>
@@ -30,7 +30,9 @@ const Header = () => {
 
           <div className="flex items-center space-x-6">
             <button className="flex items-center space-x-2 border rounded-md px-3 py-1 text-gray-700 hover:text-purple-600">
+            <Link href="cart">
             <Image src={cart}  alt="Cart" width={100} height={100} />
+            </Link>
             </button>
             
           </div>
@@ -42,15 +44,18 @@ const Header = () => {
 <div className="flex items-center justify-between py-[14px] px-[100px] pr-10">
   {/* Navigation Links */}
   <nav className="flex items-center space-x-6 text-gray-700 font-medium ">
-    <Link href="home" className="hover:text-purple-600">Home</Link>
-    <Link href="shop" className="hover:text-purple-600">Shop</Link>
-    <Link href="product" className="hover:text-purple-600">Product</Link>
-    <Link href="pages" className="hover:text-purple-600">Pages</Link>
-    <Link href="about" className="hover:text-purple-600">About</Link>
+    <Link href="/" className="hover:text-purple-600">Home</Link>
+    <Link href="/shop" className="hover:text-purple-600">Shop</Link>
+    <Link href="/product" className="hover:text-purple-600">Product</Link>
+    <Link href="/faqpages" className="hover:text-purple-600">Pages</Link>
+    <Link href="/aboutus" className="hover:text-purple-600">About</Link>
   </nav>
 
   {/* Contact Details */}
+  
+  <Link href="/contact">
   <p className="text-gray-700 text-sm ml-auto">Contact: (808) 555-0111</p>
+  </Link>
 </div>
 
       </header>
